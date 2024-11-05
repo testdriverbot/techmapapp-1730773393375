@@ -1,0 +1,74 @@
+version: 4.0.80
+steps:
+  - prompt: Click "Book a demo."
+    commands:
+      - command: hover-text
+        text: Book a demo
+        description: button to schedule a demo
+        action: click
+  - prompt: Click "Book a demo."
+    commands:
+      - command: hover-text
+        text: Book a demo
+        description: button to schedule a demo
+        action: click
+  - prompt: Assert that a booking form appears.
+    commands:
+      - command: assert
+        expect: the booking form is visible
+  - prompt: Complete the form with test data.
+    commands:
+      - command: hover-text
+        text: 8:15 am
+        description: time slot for meeting
+        action: click
+      - command: type
+        text: John Doe
+      - command: press-keys
+        keys:
+          - tab
+      - command: type
+        text: johndoe@example.com
+      - command: press-keys
+        keys:
+          - tab
+      - command: type
+        text: Test Company
+  - prompt: Complete the form with test data.
+    commands:
+      - command: hover-text
+        text: First name
+        description: first name field
+        action: click
+      - command: type
+        text: John
+      - command: hover-text
+        text: Last name
+        description: last name field
+        action: click
+      - command: type
+        text: Doe
+      - command: hover-text
+        text: Your email address
+        description: email address field
+        action: click
+      - command: type
+        text: johndoe@example.com
+      - command: hover-text
+        text: Job function
+        description: job function field
+        action: click
+      - command: type
+        text: Developer
+      - command: hover-text
+        text: Company name
+        description: company name field
+        action: click
+      - command: type
+        text: Test Company
+  - prompt: >-
+      Assert that a confirmation message is displayed.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: a confirmation message is displayed
