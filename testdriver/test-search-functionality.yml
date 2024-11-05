@@ -1,0 +1,17 @@
+version: 4.0.80
+steps:
+  - prompt: Click on the "Search" icon in the header.
+    commands:
+      - command: hover-image
+        description: search icon in the header
+        action: click
+  - prompt: Click on the "Search" icon in the header.
+    commands:
+      - command: hover-image
+        description: search icon in the header, next to the address bar
+        action: click
+  - prompt: Click on the "Search" icon in the header.
+    commands:
+      - command: hover-image
+        description: magnifying glass icon in the header
+        action: click
