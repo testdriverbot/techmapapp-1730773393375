@@ -1,0 +1,24 @@
+version: 4.0.80
+steps:
+  - prompt: Click on a link in the footer, such as "Privacy Policy."
+    commands:
+      - command: scroll-until-text
+        text: Privacy Policy
+        direction: down
+  - prompt: Click on a link in the footer, such as "Privacy Policy."
+    commands:
+      - command: scroll
+        direction: down
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+  - prompt: Click on a link in the footer, such as "Privacy Policy."
+    commands:
+      - command: scroll-until-text
+        text: Privacy Policy
+        direction: down
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
