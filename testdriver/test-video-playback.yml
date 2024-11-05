@@ -1,0 +1,19 @@
+version: 4.0.80
+steps:
+  - prompt: Click the play button on the homepage video.
+    commands:
+      - command: hover-image
+        description: play button on the video
+        action: click
+  - prompt: Click the play button on the homepage video.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: sign in button on the page
+        action: click
+  - prompt: Click the play button on the homepage video.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: sign in button on the page
+        action: click
