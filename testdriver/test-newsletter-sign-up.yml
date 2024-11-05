@@ -1,0 +1,16 @@
+version: 4.0.80
+steps:
+  - prompt: Scroll to the newsletter signup section.
+    commands:
+      - command: scroll-until-text
+        text: Sign up for our newsletter
+        direction: down
+  - prompt: Scroll to the newsletter signup section.
+    commands:
+      - command: scroll-until-text
+        text: Subscribe to our newsletter
+        direction: down
+  - prompt: Scroll to the newsletter signup section.
+    commands:
+      - command: scroll
+        direction: down
