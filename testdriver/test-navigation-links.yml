@@ -1,0 +1,24 @@
+version: 4.0.80
+steps:
+  - prompt: Click on "About Us" in the navigation menu.
+    commands:
+      - command: hover-text
+        text: About Us
+        description: link in the navigation menu
+        action: click
+  - prompt: Click on "About Us" in the navigation menu.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: About Us
+        description: link in the navigation menu
+        action: click
+  - prompt: Click on "About Us" in the navigation menu.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: About Us
+        description: link in the navigation menu
+        action: click
